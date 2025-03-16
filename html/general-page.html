@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../style/general-page.css">
+    <title>Recipes</title>
+</head>
+<body>
+<div class="container">
+    <form>
+        <div class="title">
+
+            <h2>Add your recipe</h2>
+            <h5>Please fill in this form to create a recipe</h5>
+        </div>
+        <div class="box">
+            <input type="text" name="title" placeholder="Recipe name" required>
+            <input type="text" name="description" placeholder="Recipe short description" required>
+            <textarea name="content" placeholder="Recipe full description" required></textarea>
+            <label for="recipe-image" class="custom-file-upload">Upload Image</label>
+            <input id="recipe-image" name="imagePath" type="file">
+            <button type="submit">Add my recipe</button>
+        </div>
+    </form>
+</div>
+
+<script src="../script/general-page.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+body {
+    width: 1650px;
+    border: solid 1px black;
+    margin: 50px auto auto;
+    padding: 15px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-row-gap: 10px;
+    grid-column-gap: 15px;
+}
+
+.dishes-box {
+    position: relative;
+    width: 800px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: #b93333;
+    border-radius: 15px;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+}
+
+.dishes-image-container {
+    width: 260px;
+    height: 200px;
+    float: left; /* Для обтекания текста справа */
+    margin-right: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dishes-box {
+    opacity: 0; /* Начальное состояние */
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+.delete-btn {
+    width: 25px;
+    height: 25px;
+    float: right;
+    background-color: #000000;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    border-radius: 0 13px 0 13px;
+}
+
+.delete-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+}

@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F1E9; /* Кремовый фон */
+}
+
+.container {
+    border-top: 5px solid #8B4513; /* Коричневый */
+    border-bottom: 5px solid #8B4513;
+    width: 800px;
+    height: auto;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(139, 69, 19, 0.3); /* Легкая кофейная тень */
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 32px;
+    text-align: center;
+    color: #8B4513;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    color: #5C3D2E;
+}
+
+.dishes-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type=text], textarea {
+    font-size: 16px;
+    width: 500px;
+    height: 50px;
+    margin: 10px 0;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    background-color: #FAE5D3; /* Светло-персиковый */
+    border-radius: 10px;
+    color: #5C3D2E;
+}
+
+textarea {
+    transition: height 0.6s ease-out, width 0.6s ease-out;
+}
+
+textarea:focus {
+    height: 200px;
+    width: 100%;
+    max-width: 600px;
+}
+
+button {
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #E27D60; /* Персиковый */
+    width: 300px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #C76B50; /* Темнее */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    font-size: 16px;
+    margin: 10px 0;
+    background-color: #FAE5D3;
+    width: 500px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #5C3D2E;
+}
+
+.custom-file-upload:hover {
+    background-color: #EAC5A1;
+}
+
+input:focus, textarea:focus {
+    box-shadow: 0 0 8px rgba(139, 69, 19, 0.5);
+}

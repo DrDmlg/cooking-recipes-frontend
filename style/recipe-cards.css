@@ -1,8 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     width: 1650px;
     border: solid 1px black;
     margin: 50px auto auto;
     padding: 15px;
+}
+
+nav {
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #b93333;
+    border-radius: 15px;
+    width: 1610px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+    text-transform: uppercase;
+    border-right: 2px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    padding: 14px 16px;
+}
+
+li a:hover {
+    color: white;
+    background-color: #a60808;;
 }
 
 .cards-container {
